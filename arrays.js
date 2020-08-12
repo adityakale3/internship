@@ -69,3 +69,58 @@ var arr2 = ["Rachel","Joey","Chandler","Pheobe","Monica","Ross","Marcel", "Adity
 // get Index of data
 //console.log(arr.indexOf('Hulka'));
 
+
+
+// Array to String
+// console.log(arr.toString());
+
+
+// var arrayOfString = "123".split('');     // ["A","d"..]
+// var reverseArray = arrayOfString.reverse(); // ["a","y","t","i","d","A"];
+// var joinArray = reverseArray.join("");        // aytidA
+// //var convertoString = reverseArray.toString();
+// console.log(joinArray);
+
+// console.log("UNF".split("").reverse().join(""));
+
+
+// Fliter / MAP
+
+var students = [
+    {
+        name : "Student 1",
+        grade : 2,
+        section : "A"
+    },
+    {
+        name : "Student 2",
+        grade : 2,
+        section : "B"
+    },
+    {
+        name : "Student 3",
+        grade : 3,
+        section : "A"
+    },
+    {
+        name : "Student 4",
+        grade : 2,
+        section : "A"
+    },
+    {
+        name : "Student 5",
+        grade : 2,
+        section : "A"
+    }				
+    ]
+
+    students.map(function(abc){
+       if(abc.grade == 3){
+            if(abc.section == "A"){
+                console.log(abc.name);
+            }
+       }
+    });
+
+   
+  
